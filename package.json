@@ -1,0 +1,19 @@
+{
+  "name": "donut",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "vite",
+    "compile": "babel scripts/compile.js -d dist",
+    "build": "npm run compile && node dist/compile",
+    "start": "npm run build && vite"
+  },
+  "devDependencies": {
+    "vite": "^4.2.0"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.5",
+    "@babel/preset-env": "^7.21.5"
+  }
+}
